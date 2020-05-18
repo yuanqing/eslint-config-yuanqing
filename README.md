@@ -1,4 +1,4 @@
-# eslint-config-yuanqing
+# eslint-config-yuanqing [![npm Version](https://img.shields.io/npm/v/eslint-config-yuanqing?cacheSeconds=1800)](https://www.npmjs.com/package/eslint-config-yuanqing)
 
 > An opinionated [ESLint](https://eslint.org/) configuration for [TypeScript](https://typescriptlang.org/) and [Preact](https://preactjs.com/) projects
 
@@ -26,7 +26,7 @@ Then, update `package.json` as follows:
     "lint": "eslint 'src/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
-		"extends": "yuanqing"
+    "extends": "yuanqing"
   },
   "prettier": "eslint-config-yuanqing/prettier"
 }
