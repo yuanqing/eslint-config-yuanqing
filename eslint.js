@@ -8,7 +8,12 @@ module.exports = {
     'prettier/react',
     'prettier/@typescript-eslint'
   ],
-  plugins: ['@typescript-eslint', 'react-hooks', 'simple-import-sort'],
+  plugins: [
+    '@typescript-eslint',
+    'simple-import-sort',
+    'sort-keys-fix',
+    'react-hooks'
+  ],
   // See https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -26,6 +31,14 @@ module.exports = {
   },
   rules: {
     'no-console': ['error'],
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
+    'react/jsx-sort-props': [
+      'error',
+      {
+        ignoreCase: true,
+        reservedFirst: true
+      }
+    ],
     // See https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/README.md#installation
     'react-hooks/rules-of-hooks': ['error'],
     'react-hooks/exhaustive-deps': ['error'],
@@ -33,6 +46,15 @@ module.exports = {
     'sort-imports': ['off'],
     'import/order': ['off'],
     'simple-import-sort/sort': ['error'],
+    // See https://github.com/leo-buneev/eslint-plugin-sort-keys-fix#usage
+    'sort-keys': [
+      'error',
+      'asc',
+      {
+        natural: true
+      }
+    ],
+    'sort-keys-fix/sort-keys-fix': ['error'],
     // See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
     'no-unused-vars': ['off'],
     '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
