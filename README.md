@@ -7,6 +7,7 @@
 - No semi-colons *a la* [Standard](https://standardjs.com/)
 - Auto-formatting with [Prettier](https://prettier.io/)
 - Auto-sorting of `import` statements
+- Auto-sorting of object keys and JSX `prop` keys
 - [Rules for hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
 
 ## Usage
@@ -14,7 +15,7 @@
 Install:
 
 ```
-$ yarn add --dev eslint-config-yuanqing
+$ yarn add --dev eslint eslint-config-yuanqing
 ```
 
 Then, update `package.json` as follows:
