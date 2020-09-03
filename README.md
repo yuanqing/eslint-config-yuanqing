@@ -15,7 +15,7 @@
 Install:
 
 ```
-$ yarn add --dev eslint eslint-config-yuanqing
+$ yarn add --dev eslint-config-yuanqing eslint@7 prettier@2 typescript@4
 ```
 
 Then, update `package.json` as follows:
