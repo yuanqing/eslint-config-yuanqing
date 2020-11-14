@@ -31,13 +31,17 @@ module.exports = {
   },
   rules: {
     'no-console': ['error'],
-    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
+    // See https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [
       'error',
       {
         ignoreCase: true,
         reservedFirst: true
       }
+    ],
+    // See https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+    'react/no-unknown-property': [
+      'off'
     ],
     // See https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/README.md#installation
     'react-hooks/rules-of-hooks': ['error'],
