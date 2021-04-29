@@ -1,20 +1,20 @@
 module.exports = {
-  // See https://github.com/prettier/eslint-config-prettier/blob/master/README.md#example-configuration
   extends: [
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/README.md#configuration
     'plugin:react/recommended',
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration
     'plugin:@typescript-eslint/recommended',
+    // https://github.com/prettier/eslint-config-prettier/blob/master/README.md#special-rules
     'plugin:prettier/recommended',
-    'prettier',
-    'prettier/react',
-    'prettier/@typescript-eslint'
+    'prettier'
   ],
   plugins: [
     '@typescript-eslint',
+    'react-hooks',
     'simple-import-sort',
-    'sort-keys-fix',
-    'react-hooks'
+    'sort-keys-fix'
   ],
-  // See https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration
+  // https://github.com/typescript-eslint/typescript-eslint/blob/master/docs/getting-started/linting/README.md#configuration
   parser: '@typescript-eslint/parser',
   parserOptions: {
     sourceType: 'module',
@@ -24,14 +24,18 @@ module.exports = {
   },
   settings: {
     react: {
-      // See https://github.com/preactjs/eslint-config-preact/blob/3ac23ffe761236aae1e5cc5b44614d06d71e3476/index.js#L51-L53
+      // https://github.com/preactjs/eslint-config-preact/blob/9dc5fc3682bb2da91209e05af4dcb150b24bec25/index.js#L51-L55
       pragma: 'h',
       version: '16.0'
     }
   },
   rules: {
+    // See https://github.com/eslint/eslint/blob/master/docs/rules/no-console.md
     'no-console': ['error'],
-    // See https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
+    // https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
+    'no-unused-vars': ['off'],
+    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-sort-props.md
     'react/jsx-sort-props': [
       'error',
       {
@@ -39,29 +43,28 @@ module.exports = {
         reservedFirst: true
       }
     ],
-    // See https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
+    // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
     'react/no-unknown-property': ['off'],
-    // See https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/README.md#installation
+    // https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/README.md#installation
     'react-hooks/rules-of-hooks': ['error'],
     'react-hooks/exhaustive-deps': ['error'],
-    // See https://github.com/lydell/eslint-plugin-simple-import-sort/blob/master/README.md#usage
+    // https://github.com/lydell/eslint-plugin-simple-import-sort/blob/master/README.md#usage
+    // Need to turn off `sort-imports` and `import/order` in order to use `simple-import-sort`
     'sort-imports': ['off'],
     'import/order': ['off'],
-    'simple-import-sort/sort': ['error'],
-    // See https://github.com/leo-buneev/eslint-plugin-sort-keys-fix#usage
-    'sort-keys': [
+    'simple-import-sort/imports': ['error'],
+    'simple-import-sort/exports': ['error'],
+    // https://github.com/leo-buneev/eslint-plugin-sort-keys-fix/blob/master/README.md#usage
+    'sort-keys-fix/sort-keys-fix': [
       'error',
       'asc',
       {
         natural: true
       }
     ],
-    'sort-keys-fix/sort-keys-fix': ['error'],
-    // See https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/docs/rules/no-unused-vars.md
-    'no-unused-vars': ['off'],
-    '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     // Disable some rules from `@typescript-eslint`
     '@typescript-eslint/explicit-function-return-type': ['off'],
+    '@typescript-eslint/explicit-module-boundary-types': ['off'],
     '@typescript-eslint/member-delimiter-style': ['off'],
     '@typescript-eslint/no-empty-function': ['off'],
     '@typescript-eslint/no-explicit-any': ['off'],
