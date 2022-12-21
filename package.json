@@ -18,29 +18,29 @@
   ],
   "main": "eslint.js",
   "scripts": {
-    "prettier": "prettier --config prettier.js --write '*.{js,json}'"
+    "fix": "prettier eslint.js prettier.js --config prettier.js --write"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.3.0",
-    "@typescript-eslint/parser": "5.3.0",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-plugin-import": "2.25.2",
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "@typescript-eslint/parser": "5.47.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-node": "11.1",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-promise": "5.1.1",
-    "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.2.0",
-    "eslint-plugin-simple-import-sort": "7.0.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-promise": "6.1.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
     "eslint-plugin-sort-keys-fix": "1.1.2"
   },
   "devDependencies": {
-    "eslint": "^8",
-    "prettier": "^2",
-    "typescript": "^4"
+    "eslint": ">=8",
+    "prettier": ">=2",
+    "typescript": ">=4"
   },
   "peerDependencies": {
-    "eslint": "^8",
-    "prettier": "^2",
-    "typescript": "^4"
+    "eslint": ">=8",
+    "prettier": ">=2",
+    "typescript": ">=4"
   }
 }
