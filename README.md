@@ -14,9 +14,19 @@
 
 Install:
 
+<!-- ``` markdown-interpolate: node scripts/print-npm-installation-command.js -->
 ```
-$ npm install --save-dev eslint-config-yuanqing eslint@8 prettier@2 typescript@4
+$ npm install --save-dev eslint@8 prettier@2 typescript@4
+$ npm install --save-dev --save-exact \
+    eslint-config-yuanqing \
+    @typescript-eslint/eslint-plugin@5.47.0 \
+    eslint-plugin-prettier@4.2.1 \
+    eslint-plugin-react@7.31.11 \
+    eslint-plugin-react-hooks@4.6.0 \
+    eslint-plugin-simple-import-sort@8.0.0 \
+    eslint-plugin-sort-keys-fix@1.1.2
 ```
+<!-- ``` end -->
 
 Then, update `package.json` as follows:
 
