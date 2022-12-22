@@ -6,7 +6,7 @@ async function main() {
   const packageJson = JSON.parse(await fs.readFile(filePath, 'utf8'))
   const peerDependencies = packageJson.peerDependencies
   const saveLatest = []
-  const saveExact = [packageJson.name]
+  const saveExact = [`${packageJson.name}@${packageJson.version}`]
   for (const packageName of Object.keys(peerDependencies)) {
     const version = peerDependencies[packageName]
     if (version.indexOf('>=') === 0) {

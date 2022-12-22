@@ -18,12 +18,13 @@ Install:
 ```
 $ npm install --save-dev eslint@8 prettier@2 typescript@4
 $ npm install --save-dev --save-exact \
-    eslint-config-yuanqing \
-    @typescript-eslint/eslint-plugin@5.47.0 \
-    eslint-plugin-prettier@4.2.1 \
-    eslint-plugin-react@7.31.11 \
-    eslint-plugin-react-hooks@4.6.0 \
-    eslint-plugin-simple-import-sort@8.0.0 \
+    eslint-config-yuanqing@0.0.7-alpha.1 \ 
+    @typescript-eslint/eslint-plugin@5.47.0 \ 
+    eslint-plugin-import@2.26.0 \ 
+    eslint-plugin-prettier@4.2.1 \ 
+    eslint-plugin-react@7.31.11 \ 
+    eslint-plugin-react-hooks@4.6.0 \ 
+    eslint-plugin-simple-import-sort@8.0.0 \ 
     eslint-plugin-sort-keys-fix@1.1.2
 ```
 <!-- ``` end -->
@@ -37,7 +38,8 @@ Then, update `package.json` as follows:
     "lint": "eslint 'src/**/*.{ts,tsx}'"
   },
   "eslintConfig": {
-    "extends": "yuanqing"
+    "extends": "yuanqing",
+    "root": true
   },
   "prettier": "eslint-config-yuanqing/prettier"
 }

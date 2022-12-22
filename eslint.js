@@ -22,6 +22,8 @@ module.exports = {
     '@typescript-eslint',
     // https://github.com/facebook/react/blob/main/packages/eslint-plugin-react-hooks/README.md#custom-configuration
     'react-hooks',
+    // https://github.com/import-js/eslint-plugin-import/blob/main/README.md#installation
+    'import',
     // https://github.com/lydell/eslint-plugin-simple-import-sort/blob/main/README.md#usage
     'simple-import-sort',
     // https://github.com/leo-buneev/eslint-plugin-sort-keys-fix/blob/master/README.md#usage
@@ -57,7 +59,7 @@ module.exports = {
     'simple-import-sort/imports': ['error'],
     'simple-import-sort/exports': ['error'],
     'import/first': ['error'],
-    'import/newline-after-import': ['error'],
+    'import/newline-after-import': ['error', { count: 1 }],
     'import/no-duplicates': ['error'],
     // https://github.com/leo-buneev/eslint-plugin-sort-keys-fix/blob/master/README.md#usage
     'sort-keys-fix/sort-keys-fix': [
