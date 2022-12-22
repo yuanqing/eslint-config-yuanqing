@@ -18,28 +18,33 @@
   ],
   "main": "eslint.js",
   "scripts": {
-    "fix": "prettier eslint.js prettier.js --config prettier.js --write"
+    "markdown-interpolate": "markdown-interpolate README.md",
+    "fix": "prettier eslint.js prettier.js 'scripts/*.js' --config prettier.js --write"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.47.0",
     "@typescript-eslint/parser": "5.47.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-node": "11.1",
+    "eslint-config-prettier": "8.5.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.47.0",
+    "eslint": ">=8",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-promise": "6.1.1",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-simple-import-sort": "8.0.0",
-    "eslint-plugin-sort-keys-fix": "1.1.2"
-  },
-  "devDependencies": {
-    "eslint": ">=8",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
+    "markdown-interpolate": "0.0.7",
     "prettier": ">=2",
     "typescript": ">=4"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.47.0",
     "eslint": ">=8",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-simple-import-sort": "8.0.0",
+    "eslint-plugin-sort-keys-fix": "1.1.2",
     "prettier": ">=2",
     "typescript": ">=4"
   }

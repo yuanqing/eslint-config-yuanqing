@@ -54,11 +54,11 @@ module.exports = {
     'react-hooks/rules-of-hooks': ['error'],
     'react-hooks/exhaustive-deps': ['error'],
     // https://github.com/lydell/eslint-plugin-simple-import-sort/blob/master/README.md#usage
-    // Need to turn off `sort-imports` and `import/order` in order to use `simple-import-sort`
-    'sort-imports': ['off'],
-    'import/order': ['off'],
     'simple-import-sort/imports': ['error'],
     'simple-import-sort/exports': ['error'],
+    'import/first': ['error'],
+    'import/newline-after-import': ['error'],
+    'import/no-duplicates': ['error'],
     // https://github.com/leo-buneev/eslint-plugin-sort-keys-fix/blob/master/README.md#usage
     'sort-keys-fix/sort-keys-fix': [
       'error',
