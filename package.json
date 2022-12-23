@@ -16,7 +16,7 @@
     "eslint.js",
     "prettier.js"
   ],
-  "main": "eslint.js",
+  "main": "./eslint.js",
   "scripts": {
     "markdown-interpolate": "markdown-interpolate README.md",
     "fix": "prettier eslint.js prettier.js 'scripts/*.js' --config prettier.js --write"
