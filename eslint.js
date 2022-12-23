@@ -51,7 +51,12 @@ module.exports = {
       }
     ],
     // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-unknown-property.md
-    'react/no-unknown-property': ['off'],
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['class', 'clip-rule', 'fill-rule', 'spellcheck']
+      }
+    ],
     // https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/README.md#installation
     'react-hooks/rules-of-hooks': ['error'],
     'react-hooks/exhaustive-deps': ['error'],
