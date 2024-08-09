@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-yuanqing",
-  "version": "0.0.10-alpha.0",
+  "version": "0.0.10",
   "description": "An opinionated ESLint configuration for TypeScript and Preact projects",
   "keywords": [
     "eslint",
