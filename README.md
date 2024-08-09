@@ -18,13 +18,13 @@ Install:
 ```
 $ npm install --save-dev eslint@8 prettier@3 typescript@5
 $ npm install --save-dev --save-exact \
-    eslint-config-yuanqing@0.0.9 \
-    @typescript-eslint/eslint-plugin@6.13.2 \
-    eslint-plugin-import@2.29.0 \
-    eslint-plugin-prettier@5.0.1 \
-    eslint-plugin-react@7.33.2 \
-    eslint-plugin-react-hooks@4.6.0 \
-    eslint-plugin-simple-import-sort@10.0.0 \
+    eslint-config-yuanqing@0.0.9 \ 
+    @typescript-eslint/eslint-plugin@8.0.1 \ 
+    eslint-plugin-import@2.29.1 \ 
+    eslint-plugin-prettier@5.2.1 \ 
+    eslint-plugin-react@7.35.0 \ 
+    eslint-plugin-react-hooks@4.6.2 \ 
+    eslint-plugin-simple-import-sort@12.1.1 \ 
     eslint-plugin-sort-keys-fix@1.1.2
 ```
 <!-- ``` end -->
