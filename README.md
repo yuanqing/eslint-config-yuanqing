@@ -18,7 +18,7 @@ Install:
 ```
 $ npm install --save-dev eslint@8 prettier@3 typescript@5
 $ npm install --save-dev --save-exact \
-    eslint-config-yuanqing@0.0.9 \ 
+    eslint-config-yuanqing \ 
     @typescript-eslint/eslint-plugin@8.0.1 \ 
     eslint-plugin-import@2.29.1 \ 
     eslint-plugin-prettier@5.2.1 \ 
